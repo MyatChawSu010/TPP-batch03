@@ -1,3 +1,44 @@
+h1 {
+  color: #f00;
+  font-size: 24px;
+}
+
+.bgColor, a {
+  background-color: #fff;
+  color: #000;
+}
+
 html {
   font-size: 14px;
+  color: #000;
+}
+
+a {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+a:hover {
+  color: #f00;
+}
+
+a,
+.bgColor {
+  background-color: #fff;
+  color: #000;
+}
+
+.c-btn {
+  background-color: #000;
+}
+.c-btn__link a {
+  color: #fff;
+  background-color: aqua;
+}
+.c-btn__link a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.c-btn__link--bg a {
+  background-color: #f0f0f0;
 }/*# sourceMappingURL=style.css.map */
