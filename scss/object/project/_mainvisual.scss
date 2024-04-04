@@ -1,0 +1,28 @@
+.mainviusal {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../img/mainvisual/mainvisual_bg.png);
+  background-size: 100% 100%;
+  justify-content: center;
+
+  &__inner {
+    max-width: 1017px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    @include latoFontFamily(300);
+    font-size: 100px;
+    color: $whiteColor;
+    text-align: center;
+  }
+
+  p {
+    @include poppinsFontFamily(400);
+    font-size: 18px;
+    color: $whiteColor;
+    text-align: center;
+    line-height: 28px;
+  }
+}

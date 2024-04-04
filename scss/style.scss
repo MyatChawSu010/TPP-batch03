@@ -1,76 +1,13 @@
-@import '_reset.scss';
-$color : #000;
+@import 'object/utility/mixin';
+@import 'foundation/setting';
+@import 'foundation/reset';
+@import 'foundation/base';
+@import 'foundation/fonts';
 
-// .card {
-//   width: calc(100% / 3 - 10);
-// }
+// Layout
+@import 'layout/layout';
+@import 'layout/header';
 
-@mixin fontFamily ($weight: 400) {
-  font-family: 'Arial', sans-serif;
-  font-size: 14px;
-  font-weight: $weight;
-}
-
-.bgColor {
-  background-color: #fff;
-  color: #000;
-}
-
-html {
-  font-size: 14px;
-  color: $color;
-}
-
-a {
-  @include fontFamily(700);
-  // font-family: 'Arial',
-  // sans-serif;
-  // font-size: 14px;
-  // font-weight: $weight;
-
-  @extend .bgColor;
-
-  &:hover {
-    color: #f00;
-  }
-}
-
-a,
-.bgColor {
-  background-color: #fff;
-  color: #000;
-}
-
-// div.c-btn
-// div.c-btn__link
-// div.c-btn__link--bg a
-
-.c-btn {
-  background-color: $color;
-
-  &__link {
-    a {
-      color: #fff;
-      background-color: aqua;
-
-      &:hover {
-        background-color: #fff;
-        color: #000;
-      }
-    }
-
-    &--bg {
-      a {
-        background-color: #f0f0f0;
-      }
-    }
-  }
-}
-
-// .c-btn c-btn__link a {
-
-// }
-
-// .c-btn c-bt__link .c-btn__link--bg a {
-
-// }
+// Object
+@import 'object/component/btn';
+@import 'object/project/mainvisual';
